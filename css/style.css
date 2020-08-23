@@ -38,6 +38,9 @@ a:hover {
     background-size: cover;
     position: relative;
 }
+blockquote footer{
+    color: #000;
+}
 
 .bloc .container {
     padding-left: 0;
