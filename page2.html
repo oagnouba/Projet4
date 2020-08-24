@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -76,29 +77,34 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate="">
 					<div class="form-group">
 						<label>
 							Nom
+						<input id="name" class="form-control" required="">
 						</label>
-						<input id="name" class="form-control" required />
+						<div class="help-block">
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
+						<input id="email" class="form-control" type="email" required="">
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<div class="help-block">
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
+						<input class="form-control" type="text" required="" id="input_504" />
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<div class="help-block">
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						<textarea id="message" class="form-control" rows="4" cols="50" required=""></textarea>
+						</label>
+						<div class="help-block">
 					</div>
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -116,42 +122,54 @@
 <!-- bloc-7 END -->
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<h2 class="text-center black">
 					La chouette agence - Agence web basée à Lyon.<br>
-				</p>
-				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
+				</h2>
+				<section class="row row-no-gutters social">
+					<article class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a href="https://twitter.com/home" target="_blank">
+								<i  aria-hidden="true" class="fa fab fa-twitter icon-md"></i>
+								<p>Twitter</p>
+							</a>
 						</div>
-					</div>
-					<div class="col-sm-3">
+					</article>
+					<article class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a href="https://www.facebook.com/" target="_blank">
+								<i  aria-hidden="true" class="fa fab fa-facebook-f icon-md"></i>
+								<p>Facebook</p>
+							</a>
 						</div>
-					</div>
-					<div class="col-sm-3">
+					</article>
+					<article class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a href="https://dribbble.com/" target="_blank">
+								<i  aria-hidden="true" class="fa fab fa-dribbble icon-md"></i>
+								<p>Dribble</p>
+							</a>
 						</div>
-					</div>
-					<div class="col-sm-3">
+					</article>
+					<article class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a href="https://www.instagram.com/" target="_blank">
+								<i  aria-hidden="true" class="fa fab fa-instagram icon-md"></i>
+								<p>Instagram</p>
+							</a>
 						</div>
-					</div>
-				</div>
+					</article>
+				</section>
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
-</div>
+</main>
 <!-- Principal conteneur END -->
 
 </body>
